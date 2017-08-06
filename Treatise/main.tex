@@ -1,0 +1,267 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = en_GB
+\documentclass[12pt,a4paper,draft]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[british]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+\usepackage[margin=3cm]{caption}
+\usepackage{wrapfig}
+\usepackage{listings}
+\usepackage{booktabs}
+%\usepackage[backend=biber, style=alphabetic, citestyle=authoryear]{biblatex}
+
+\newfloat{kod}{h}{txt}
+\floatname{kod}{K\^od}
+
+\lstset{
+	numbers=left,
+	basicstyle=\footnotesize,
+	captionpos=b,
+	language=Python
+}
+% \renewcommand{\lstlistingname}{K\^od}% Listing -> Algorithm
+% \renewcommand{\lstlistlistingname}{List of \MakeLowercase{\lstlistingname s}}% List of Listings -> List of Algorithms
+
+\usepackage[left=3cm,right=3cm,top=2cm,bottom=3cm]{geometry}
+\author{Bogdan Okreša Đurić}
+\title{\naslov}
+\pagestyle{fancy}
+
+\newcommand{\institute}{SVEUČILIŠTE U ZAGREBU\\	FAKULTET ORGANIZACIJE I INFORMATIKE\\ V A R A Ž D I N}
+\newcommand{\naslov}{Ususret ontologiji za mrežne računalne igre s ulogama namijenjene većem broju igrača: kritički osvrt na dosadašnji rad}
+\newcommand{\autor}{Bogdan Okreša Đurić}
+\newcommand{\predmet}{Odabrana poglavlja upravljanja znanjem}
+\newcommand{\currentDate}{11. srpnja \the\year.}
+
+
+\begin{document}
+	
+	
+\begin{titlepage}
+	\centering
+		\textbf{\institute}\\[4cm]
+
+	\raggedright
+	{\large \autor}\\[6cm]
+	
+	\centering
+		\textbf{\huge \textsc{\naslov}}\\[0.5cm]
+		\textbf{\textsc{\predmet}}\\\vfill%[9cm]
+		
+		Varaždin, \the\year.
+		
+	\clearpage
+	\thispagestyle{empty}
+		
+	\centering
+		\textbf{\institute}\\[4cm]
+		
+	\raggedright
+	{\large \autor}\\
+	Broj indeksa: D-211/2014 \\
+	Informacijske znanosti\\
+	Sveučilišni doktorski studij\\[4.5cm]
+	
+	\centering
+		\textbf{\huge  \textsc{\naslov}}\\[0.5cm]
+		\textbf{DOKTORSKI RAD\\\textsc{\predmet}}\\[2cm]
+
+	\raggedright
+		\hspace{0.5\linewidth}\textbf{Mentor:}\\
+		\hspace{0.5\linewidth}izv.prof.dr.sc. Markus Schatten\\\vfill%[5.5cm]
+		
+	\centering
+		Varaždin, \currentDate
+	
+\end{titlepage}
+
+% \begin{quote}
+%     Devotion
+% \end{quote}
+% \pagebreak
+
+\pagenumbering{roman}
+% \chead[E]{{\predmet} - Doktorski rad}
+% \lhead{}
+% \rhead{}
+% \thispagestyle{fancy}
+\onehalfspacing
+
+\tableofcontents
+
+%\pagebreak
+
+\clearpage
+\listoffigures
+
+\clearpage
+\listoftables
+
+\clearpage
+\lstlistoflistings
+%\listof{kod}{Isječci k\^oda}
+
+\pagebreak
+
+\pagenumbering{arabic}
+
+%%% NEW CHAPTER - INTRODUCTORY NOTES %%%
+\chapter{Introductory Notes}
+
+\section{Motivation}
+
+\section{Introduction}
+
+\section{Conceptual Definitions}
+
+\begin{table}[h]
+    \centering
+    \caption{Conceptual definitions of the most important concepts of this thesis}
+    \label{tab:IntroConcepts}
+    \begin{tabular}{p{4.5cm}|p{9cm}}
+        \toprule
+        \textbf{Concept Symbol} & \textbf{Concept Intension} \\\midrule
+        Agent & \\
+        Multiagent System & \\
+        Large-Scale Multiagent System & \\
+        Model & \\
+        Metamodel & \\
+        Ontology & \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Literature Review of Related Research}
+
+%%% NEW CHAPTER - SCIENTIFIC CONTRIBUTION %%%
+\clearpage
+\chapter{Scientific Contribution}
+
+
+
+\section{Conceptual and Semantic Modelling}
+
+
+\subsection{Related Research}
+
+
+\subsection{Ontology Concepts}
+
+\subsubsection{Classes}
+
+\subsubsection{Object Properties}
+
+\subsubsection{Data Properties}
+
+\subsubsection{Inference Process}
+
+
+\subsection{Ontology Example}
+
+
+
+\section{Metamodelling}
+
+
+\subsection{Related Research}
+
+
+\subsection{Model Semantics}
+
+
+\subsection{Model Syntax}
+
+
+\subsection{Organisational Dynamics}
+
+
+\subsection{Modelling Example}
+
+%%% NEW CHAPTER - PRACTICAL CONTRIBUTION %%%
+\clearpage
+\chapter{Practical Contribution}
+
+\section{Metamodelling Tool}
+
+\section{Metamodel Implementation}
+
+- elements used when implementing the metamodel
+
+\subsection{Overcome Challenges}
+
+\section{Generating Application Templates}
+
+%%% NEW CHAPTER - FINAL REMARKS %%%
+\clearpage
+\chapter{Final Thoughts}
+
+
+
+\section{Discussion}
+
+\subsection{SWOT Analysis}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{p{0.45\textwidth}|p{0.45\textwidth}}
+        \toprule
+        \textsc{Strength} & \textsc{Weakness} \\
+        text & text \\\midrule
+        \textsc{Opportunity} & \textsc{Threat} \\
+        text & text \\\bottomrule
+    \end{tabular}
+    \caption{SWOT analysis of the final practical contribution}
+    \label{tab:my_label}
+\end{table}
+
+
+\section{Conclusions}
+
+
+
+\bibliographystyle{ieeetr}
+\bibliography{library}
+
+\end{document}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+%\begin{kod}
+%	\centering
+%	\texttt{<http://dragon.foi.hr/DragonOnto\#Char\_Luke>	<http://dragon.foi.hr/DragonOnto\#isMemberOf>	<http://dragon.foi.hr/DragonOnto\#Party\_Spam>}
+%	\caption
+%		[RDF trojka]
+%		{RDF trojka koja opisuje odnos koncepata \texttt{Char\_Luke}, \texttt{isMemberOf} i \texttt{Party\_Spam}}
+%	\label{kod:RDF_pocetni}
+%\end{kod}
+
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=\linewidth]{RDF1}
+%	\caption
+%		[RDF graf]
+%		{Graf koji predstavlja RDF trojku iz k\^oda \ref{kod:RDF_pocetni}}
+%	\label{fig:RDF_pocetni}
+%\end{figure}
+
+%\begin{table}
+%	\caption{Neke od klasa koje su korištene za modeliranje svijeta igre The Mana World}
+%	\label{tbl:Primjer_klase}
+%	\begin{center}
+%		\begin{tabular}{|p{0.20\linewidth}|p{0.20\linewidth}|p{0.5\linewidth}|}
+%			\hline \textbf{Klasa} & \textbf{Nadklasa} & \textbf{Opis} \\ 
+%			
+%			\hline \texttt{CharClass} & \texttt{owl:Thing} & Sadrži sve moguće klase likova igrača, koje su određene prema rasporedu bodova vještina pri stvaranju lika igrača.
+%			\hline 
+%		\end{tabular} 
+%	\end{center}
+%\end{table}
